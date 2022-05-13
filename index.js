@@ -1,5 +1,6 @@
 //Librerias
 const express = require('express')
+const morgan = require('morgan')
 
 const r_usuarios = require('./src/rutas/r_usuarios')
 const r_productos = require('./src/rutas/r_productos')
@@ -18,6 +19,12 @@ db.on('connected', ()=>{
 const app = express()
 
 //Middleware
+app.use(morgan('combined'))
+app.use(express.json()) // parsear las peticiones 
+app.use(express.urlencoded({extended: true})) //parsear datos en peticiones
+
+
+
 app.use('/usuarios', r_usuarios)
 app.use('/productos', r_productos)
 
