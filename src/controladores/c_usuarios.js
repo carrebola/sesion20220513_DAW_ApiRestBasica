@@ -1,9 +1,18 @@
-
+const m_usuarios = require('../modelos/m_usuarios')
 
 module.exports = {
-    leerUsuarios : (req, res)=>{
+    leerUsuarios : async (req, res)=>{
         //leer de la base de datos
-        //Creamos el schema
+        try {
+            const usuariosEncontrados = await m_usuarios.find()
+            res.json(usuariosEncontrados)
+        } catch (error) {
+            res.json({
+                error: error,
+                mensaje: 'Ohhhhh, algo ha ido mal en la petición con la bd ' + error
+            })
+        }
+
         res.send('leer usuario')
     },
     leerUsuarioId : (req, res)=>{
