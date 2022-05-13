@@ -24,3 +24,14 @@ Procedimiento:
     - post a /usuarios -->crearUsuario()
     - put a /usuarios/:id -->editarUsuarioId()
     - delete a /usuarios/:id -->borrarUsuarioId()
+
+6. conexión con la base de datos en database.NodeJS
+7. peticiones a mongodb 
+    - Crear un esquema
+    - Creamos un modelo
+    - usaremos el modelo para hacer peticiones a la base de datos:
+        - modelo.find() -- leerUsuarios()
+        - modelo.findById(id) -- leerUsuarioId()
+        - instancia.save() -- crearUsuario()
+        - modelo.findByIdAndUpdate(id) -- editarUsuarioId()
+        - modelo.findByIdAndDelete(id) -- borrarUsuarioId()
