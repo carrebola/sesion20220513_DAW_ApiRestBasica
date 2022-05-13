@@ -7,6 +7,7 @@ Requisitos:
 - VisualStudioCode
 - NodeJS y npm
 - Cuenta en MongoDB atlas
+- Postman
 
 Procedimiento:
 1. Instalación y creación de un proyecto con NodeJS
@@ -16,3 +17,10 @@ Procedimiento:
 4. crear rutas
     - http://localhost:8080/usuarios
     - http://localhost:8080/productos
+
+5. controladores
+    - get a /usuarios -->leerUsuarios()
+    - get a /usuarios/:id -->leerUsuarioId()
+    - post a /usuarios -->crearUsuario()
+    - put a /usuarios/:id -->editarUsuarioId()
+    - delete a /usuarios/:id -->borrarUsuarioId()
