@@ -1,0 +1,24 @@
+{
+  "name": "sesion20220513_daw_apirestbasica",
+  "version": "1.0.0",
+  "description": "Programación de una api rest para aplicación distribuida",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carrebola/sesion20220513_DAW_ApiRestBasica.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carrebola/sesion20220513_DAW_ApiRestBasica/issues"
+  },
+  "homepage": "https://github.com/carrebola/sesion20220513_DAW_ApiRestBasica#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
